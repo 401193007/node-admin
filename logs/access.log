@@ -39,3 +39,23 @@
 [2017-10-13 17:56:43.306] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
 [2017-10-13 17:59:24.999] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
 [2017-10-13 17:59:25.439] [INFO] system - connected success!
+[2017-10-13 18:22:43.212] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:22:43.666] [INFO] system - connected success!
+[2017-10-13 18:24:38.596] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:24:39.128] [INFO] system - connected success!
+[2017-10-13 18:24:45.706] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:24:46.292] [INFO] system - connected success!
+[2017-10-13 18:24:57.832] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:24:58.451] [INFO] system - connected success!
+[2017-10-13 18:25:05.253] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:25:05.880] [INFO] system - connected success!
+[2017-10-13 18:25:12.784] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:25:13.588] [INFO] system - connected success!
+[2017-10-13 18:25:15.578] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:25:16.307] [INFO] system - connected success!
+[2017-10-13 18:29:09.944] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:29:10.618] [INFO] system - connected success!
+[2017-10-13 18:30:38.806] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:30:39.362] [INFO] system - connected success!
+[2017-10-13 18:31:47.632] [INFO] system - mysql config  {"host":"localhost","user":"root","password":"1234","database":"demo","port":3306,"connectionLimit":50,"acquireTimeout":10000,"charset":"utf8"}
+[2017-10-13 18:31:48.072] [INFO] system - connected success!

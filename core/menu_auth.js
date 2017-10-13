@@ -26,7 +26,7 @@ module.exports.check = function(req){
 
 //设置侧边栏菜单
 module.exports.setMenus = function(req, user_id ){	
-	// var sql = "select a.user_id,b.role_id,b.role_name,b.description,d.menu_id,d.parent_id,d.menu_name,d.menu_url,d.menu_icon from bs_user_role a LEFT JOIN bs_role b ON a.role_id =b.role_id LEFT JOIN bs_menu_role c ON b.role_id = c.role_id LEFT JOIN bs_menu d ON c.menu_id = d.menu_id where a.user_id=? GROUP BY d.menu_id ORDER BY d.parent_id ASC,d.menu_id ASC";
+	var sql = "select a.user_id,b.role_id,b.role_name,b.description,d.menu_id,d.parent_id,d.menu_name,d.menu_url,d.menu_icon from bs_user_role a LEFT JOIN bs_role b ON a.role_id =b.role_id LEFT JOIN bs_menu_role c ON b.role_id = c.role_id LEFT JOIN bs_menu d ON c.menu_id = d.menu_id where a.user_id=? GROUP BY d.menu_id ORDER BY d.parent_id ASC,d.menu_id ASC";
 
 	// var menu_roles = await mysql.querySync(sql, user_id);  //同步执行sql语句
 
@@ -35,11 +35,11 @@ module.exports.setMenus = function(req, user_id ){
 
  //    var menu_active = {};	
 
- 	var sql = "select * from bs_menu";
+ // 	var sql = "select * from bs_menu";
 
- 	mysql.querySync(sql,"",function(error,row){
- 		if(error) return console.error(error);
-
- 	});
-
+    mysql.querySync(sql,"23").then(function(rows){
+        console.log(rows);
+    }).catch(function(err){
+        console.log(err);
+    })
 }
