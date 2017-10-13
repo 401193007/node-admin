@@ -1,0 +1,29 @@
+{
+  "mysql": {
+    "host": "localhost",
+    "user": "root",
+    "password": "1234",
+    "database": "demo",
+    "port": 3306,
+    "connectionLimit": 50,
+    "acquireTimeout": 10000,
+    "charset": "utf8"
+  },
+  "mongodb": {
+    "db_type": "mongodb",
+    "db_host": [
+      "172.16.169.150:27017"
+    ],
+    "db_name": "demo",
+    "db_replica_set": ""
+  },
+  "redis": {
+    "cluster": false,
+    "connect_info": [
+      {
+        "port": 6379,
+        "host": "127.0.0.1"
+      }
+    ]
+  }
+}
