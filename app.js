@@ -5,6 +5,7 @@ var pool = require("./core/mysql").Pool;
 
 //路由相关
 var routes = require('./routes/index');  
+var login = require('./routes/login');  
 
 var app = express();
 
@@ -15,7 +16,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set("views",path.join(__dirname,"views"));
 app.set("view engine","ejs");
 
-app.use('/', routes);
+// app.use('/', routes);
+app.use('/', login);
 
 	
 module.exports = app;

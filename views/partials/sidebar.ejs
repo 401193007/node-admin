@@ -4,50 +4,38 @@
     <section class="sidebar">
 		<ul class="sidebar-menu" data-widget="tree">
 			<li class="header">主菜单</li>
-			<li class="treeview active">
-				<a href="javascript:void(0);">
-					<i class="glyphicon fa fa-dashboard"></i>
-					<span>我的控制台</span>
+			<% if(menus.length > 0){ %>
+			<% menus.forEach(function(item,index){ %>
+			<li class="<% if(item['menu_child'].length > 0){ %>treeview<%}%>">
+                <a href="<%= item['menu_url'] %>">
+                    <i class="glyphicon <%= item['menu_icon'] %>"></i> <span><%= item['menu_name'] %></span>
+                    <% if(item['menu_child'].length > 0){ %>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
-                    </span>					
-				</a>		
-				<ul class="treeview-menu">
-					<li class="active">
-						<a href="javascript:void(0);"><i class="fa fa-circle-o"></i> 1： Dashboard v1</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><i class="fa fa-circle-o"></i> 2： Dashboard v2</a>
-					</li>
-				</ul>		
+                    </span>
+                    <% } %>
+                </a>
+                <% if(item['menu_child'].length > 0){ %>
+                <ul class="treeview-menu">
+                    <% item['menu_child'].forEach(function(child, index){ %>
+                    <li><a href="<%= child['menu_url'] %>">
+                    	<i class="fa fa-circle-o"></i> 
+                    	<%= index + 1 %>：<%= child['menu_name'] %></a>
+                	</li>
+                    <% }) %>
+                </ul>
+                <% } %>
 			</li>
-			<li class="treeview">
-				<a href="javascript:void(0);">
-					<i class="glyphicon fa fa-dashboard"></i>
-					<span>我的控制台</span>
+			<% })}else{ %>	
+            <li class="treeview">
+                <a href="#">
+                    <i class="glyphicon"></i> <span>暂无菜单</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
-                    </span>					
-				</a>				
-			</li>
-			<li class="treeview">
-				<a href="javascript:void(0);">
-					<i class="glyphicon fa fa-dashboard"></i>
-					<span>我的控制台</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>					
-				</a>				
-			</li>
-			<li class="treeview">
-				<a href="javascript:void(0);">
-					<i class="glyphicon fa fa-dashboard"></i>
-					<span>我的控制台</span>
-                    <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>					
-				</a>				
-			</li>
+                    </span>
+                </a>
+            </li>
+			<% } %>	
 		</ul>
     </section>
     <!-- /.sidebar -->
